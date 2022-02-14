@@ -24,6 +24,6 @@ const views = join(__dirname, '..', 'views');
 declared above*/
 nunjucks.configure(views, { express });
 //start the application
-  await app.listen(7000);
+  await app.listen(2000);
 }
 bootstrap();
