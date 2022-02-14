@@ -23,6 +23,8 @@ const views = join(__dirname, '..', 'views');
 /*Finally, configure nunjucks, setting views and express
 declared above*/
 nunjucks.configure(views, { express });
+const staticAssets = join(__dirname, '..', 'static');
+app.useStaticAssets(staticAssets);
 //start the application
   await app.listen(2000);
 }
