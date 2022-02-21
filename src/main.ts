@@ -1,5 +1,6 @@
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
+import {TypeOrmModule} from '@nestjs/typeorm';
 
 //Let's make it a NestExpressApplication
 import { NestExpressApplication } from '@nestjs/platform-express';
